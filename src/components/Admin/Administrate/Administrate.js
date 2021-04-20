@@ -113,7 +113,7 @@ const Administrate = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/adminEmail')
+        fetch('https://arcane-caverns-85014.herokuapp.com/adminEmail')
             .then(res => res.json())
             .then(data => setIsAdmin(data))
     }, [])
@@ -134,7 +134,7 @@ const Administrate = () => {
             price: data.price,
         };
         console.log(serviceData);
-        const url = `http://localhost:5000/addService`;
+        const url = `https://arcane-caverns-85014.herokuapp.com/addService`;
         fetch(url, {
             method: 'POST',
             headers: {

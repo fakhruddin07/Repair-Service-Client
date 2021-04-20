@@ -113,7 +113,7 @@ const TotalOrder = () => {
     });
 
     useEffect(() => {
-        fetch('http://localhost:5000/adminEmail')
+        fetch('https://arcane-caverns-85014.herokuapp.com/adminEmail')
             .then(res => res.json())
             .then(data => setIsAdmin(data))
     }, [])
@@ -126,7 +126,7 @@ const TotalOrder = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/order')
+        fetch('https://arcane-caverns-85014.herokuapp.com/order')
             .then(res => res.json())
             .then(data => setManageServices(data))
     }, [manageServices])

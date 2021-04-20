@@ -9,7 +9,7 @@ const Service = ({ service }) => {
                 <img className="card-img-top img-fluid w-100" src={service.imageURL} alt="" />
                     <div className="card-header d-flex  align-items-center">                      
                         <div>
-                            <h6 className="text-primary">{service.name}</h6>
+                            <h6 className="text-dark">{service.name}</h6>
                             <p className="m-0">{service.description}</p>
                             <Link to={`user/${service._id}`}><button class="text-center btn btn-success">Purchase Now</button></Link> 
                         </div>

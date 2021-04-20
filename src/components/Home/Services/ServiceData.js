@@ -7,7 +7,7 @@ const ServiceData = () => {
     const [services, setServices] = useState([]);
    
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://arcane-caverns-85014.herokuapp.com/services')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])
@@ -15,7 +15,7 @@ const ServiceData = () => {
         <section className="services">
             <div className="container">
                 <div className="row my-5 section-header text-center">
-                    <h1 class="text-center text-primary">OUR SERVICES</h1>
+                    <h1 class="text-center text-dark">OUR SERVICES</h1>
                 </div>
                 <div className="card-deck row">
                    {

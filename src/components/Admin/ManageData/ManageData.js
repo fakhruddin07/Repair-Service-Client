@@ -114,7 +114,7 @@ const ManageData = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/adminEmail')
+        fetch('https://arcane-caverns-85014.herokuapp.com/adminEmail')
             .then(res => res.json())
             .then(data => setIsAdmin(data))
     }, [])
@@ -126,14 +126,14 @@ const ManageData = () => {
     })
 
     const handleDeleteService = id => {
-        fetch(`http://localhost:5000/deleteEvent/${id}`, {
+        fetch(`https://arcane-caverns-85014.herokuapp.com/deleteEvent/${id}`, {
             method: 'DELETE',
         })
             .then(res => res.json())
             .then(data => setDeleteService(data))
     }
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://arcane-caverns-85014.herokuapp.com/services')
             .then(res => res.json())
             .then(data => setManageServices(data))
     }, [manageServices])

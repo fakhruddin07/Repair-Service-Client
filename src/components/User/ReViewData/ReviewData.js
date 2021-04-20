@@ -112,7 +112,7 @@ const ReviewData = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/adminEmail')
+        fetch('https://arcane-caverns-85014.herokuapp.com/adminEmail')
             .then(res => res.json())
             .then(data => setIsAdmin(data))
     }, [])
@@ -132,7 +132,7 @@ const ReviewData = () => {
             rating: data.rating
         };
         console.log(reviewData);
-        const url = `http://localhost:5000/addReview`;
+        const url = `https://arcane-caverns-85014.herokuapp.com/addReview`;
         fetch(url, {
             method: 'POST',
             headers: {
